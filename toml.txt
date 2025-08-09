@@ -1,0 +1,10 @@
+[build]
+  publish = "/"  # Deploy all files in root
+
+# Security headers (critical for static sites)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
