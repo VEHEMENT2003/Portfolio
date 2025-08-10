@@ -18,6 +18,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode">
@@ -147,7 +148,7 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Innovative solutions combining AI, web development, and data analytics</p>
             </div>
-            <div class="projects-grid">
+            <div class="projects-grid" id="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -208,8 +209,8 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
+                <!-- Hidden Projects (4-8) -->
+                <div class="project-card hidden-project" style="display: none;">
                     <div class="project-header">
                         <div class="project-title">YouTube Comment Sentiment Analysis</div>
                     </div>
@@ -228,8 +229,7 @@
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card">
+                <div class="project-card hidden-project" style="display: none;">
                     <div class="project-header">
                         <div class="project-title">Weather Web App</div>
                     </div>
@@ -248,8 +248,7 @@
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card">
+                <div class="project-card hidden-project" style="display: none;">
                     <div class="project-header">
                         <div class="project-title">Impact of Organic Farming</div>
                     </div>
@@ -267,8 +266,7 @@
                     </div>
                 </div>
 
-                <!-- Project 7 -->
-                <div class="project-card">
+                <div class="project-card hidden-project" style="display: none;">
                     <div class="project-header">
                         <div class="project-title">To-Do List App</div>
                     </div>
@@ -286,8 +284,7 @@
                     </div>
                 </div>
 
-                <!-- Project 8 -->
-                <div class="project-card">
+                <div class="project-card hidden-project" style="display: none;">
                     <div class="project-header">
                         <div class="project-title">Terrain Dec Bot</div>
                     </div>
@@ -304,6 +301,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Show More Button -->
+            <div class="show-more-container" style="text-align: center; margin-top: 2rem;">
+                <button id="show-more-btn" class="btn-secondary">
+                    <i class="fas fa-plus"></i> Show More Projects
+                </button>
             </div>
         </div>
     </section>
@@ -359,6 +363,78 @@
         </div>
     </section>
 
+    <!-- Certifications & Research Section -->
+    <section class="section" id="certifications" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Research</h2>
+                <p class="section-subtitle">Professional credentials and published research work</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Official AWS certification demonstrating cloud computing fundamentals</p>
+                        <a href="https://drive.google.com/file/d/1TFtbF3RCs8JDsD_D4puuAR8WGoiT2T5m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Scaler's Complete Python Course</h3>
+                        <p>Comprehensive Python programming certification</p>
+                        <a href="https://drive.google.com/file/d/1iRL-Hyw9blOtiI2iEqg3rX9Vqhg8pfvY/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Plant Disease Prediction Model Comparisons</h3>
+                        <p>Research on comparative analysis of machine learning models for plant disease detection and classification</p>
+                        <a href="https://osf.io/68daj_v1/" target="_blank" rel="noopener noreferrer" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Research Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Stammering Detection Using CNN-LSTM Architecture</h3>
+                        <p>Research on speech disfluency recognition approach with MFCC audio features and model training optimization</p>
+                        <a href="https://www.techrxiv.org/users/939912/articles/1310004-stammering-detection-using-cnn-lstm-architecture-a-speech-disfluency-recognition-approach-with-mfcc-audio-features" target="_blank" rel="noopener noreferrer" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Research Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Letter of Recommendation</h3>
+                        <p>Professional recommendation letter from industry experts</p>
+                        <a href="https://drive.google.com/file/d/1ismdY_5ABoDlSEewgCTJQ8cA2uEs5nOT/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Letter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
@@ -403,6 +479,15 @@
                         <p><a href="https://www.instagram.com/vrushabh_vj?igsh=MWtkeHAwcm0yMTh5bA==" target="_blank" rel="noopener noreferrer">@vrushabh_vj</a></p>
                     </div>
                 </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+917370032003">+91 7370032003</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -418,9 +503,31 @@
     <script>
         // Current year for footer
         document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Show More Projects functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const showMoreBtn = document.getElementById('show-more-btn');
+            const hiddenProjects = document.querySelectorAll('.hidden-project');
+            let projectsShown = 0;
+            
+            showMoreBtn.addEventListener('click', function() {
+                if (projectsShown < hiddenProjects.length) {
+                    // Show next 2 projects
+                    const projectsToShow = Math.min(2, hiddenProjects.length - projectsShown);
+                    for (let i = 0; i < projectsToShow; i++) {
+                        if (hiddenProjects[projectsShown + i]) {
+                            hiddenProjects[projectsShown + i].style.display = 'block';
+                        }
+                    }
+                    projectsShown += projectsToShow;
+                    
+                    // Hide button if all projects are shown
+                    if (projectsShown >= hiddenProjects.length) {
+                        showMoreBtn.style.display = 'none';
+                    }
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
-
-
